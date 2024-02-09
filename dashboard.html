@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Dashboard</h1>
+        
+        <!-- Form to add a new URL -->
+        <form action="#" method="POST" class="url-form">
+            <label for="original-url">Enter URL:</label>
+            <input type="text" id="original-url" name="original-url" required>
+            <button type="submit" class="btn">Shorten URL</button>
+        </form>
+        
+        <!-- List of shortened URLs -->
+        <ul class="url-list">
+            <li>
+                <span class="original-url">https://example.com/very-long-url-that-has-been-shortened</span>
+                <span class="short-url">shorturl</span>
+                <button class="btn edit-btn">Edit</button>
+                <button class="btn delete-btn">Delete</button>
+                <button class="btn analytics-btn">Analytics</button>
+            </li>
+            <!-- More list items will be dynamically added here -->
+        </ul>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
